@@ -1,0 +1,541 @@
+html,
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+} 
+
+body {
+  font-family: 'Nunito sans';
+  letter-spacing: 0.0625em;
+  color: #444;
+}
+
+/* ------------------------------------------ */
+/* UNIVERSAL ELEMENTS */
+/* ------------------------------------------ */
+
+a {
+  color: #3a8bb9;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3a6eba;
+}
+
+.btn {
+  padding: 1.25rem 2rem;
+  font-family: 'Nunito sans';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+
+.btn-primary {
+  background-color: #3a8bb9;
+  border: 2px solid #3a8bb9;
+}
+
+.btn-primary:hover {
+  background-color: #3a6eba;
+}
+
+.btn-primary:active {
+  background-color: #3a6eba;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #444;
+  color: #444;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(0, 0, 0, 0.1);;
+  color: #444;
+  border: 2px solid #444;
+}
+
+.btn-secondary:active {
+  background-color: #444;
+  color: #fff;
+}
+
+/* ------------------------------------------ */
+/* NAVIGATION */
+/* ------------------------------------------ */
+
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+  font-size: 150%;
+  padding: 0.5rem;
+  color: #3a8bb9;
+  border: none;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #444;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    transition: none;
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    color: #3a8bb9;
+  }
+  #mainNav .nav-link:hover {
+    border-bottom: 0.2rem solid #3a8bb9;
+  }
+  #mainNav .nav-link:active {
+    color: #444;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #444;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #444;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #3a8bb9;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #3a6eba;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #3a8bb9;
+    outline: none;
+    border-bottom: 0.25rem solid #3a8bb9;
+  }
+  .img-gallery_row {
+    display: flex;
+  }
+}
+
+/* ------------------------------------------ */
+/* MASTHEAD SECTION */
+/* ------------------------------------------ */
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 25rem;
+  padding: 7rem 0;
+  background: #fff;
+}
+
+.masthead h1 {
+  font-family: 'Playfair Display SC';
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0 auto 2rem auto;
+  color: #888;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 600px;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 8.5rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* ------------------------------------------ */
+/* ABOUT SECTION */
+/* ------------------------------------------ */
+
+.about-section {
+  padding: 5rem 0;
+  background-color: rgb(230, 230, 230);
+}
+
+.about-section_row {
+  align-items: center;
+}
+
+.about-section .about-section_row:first-of-type {
+  margin-bottom: 3rem;
+}
+
+.about-section_featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .about-section_featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #3a8bb9;
+    text-align: left;
+  }
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+
+/* ------------------------------------------ */
+/* TEACHING SECTION */
+/* ------------------------------------------ */
+
+.teaching-section {
+  padding: 5rem 0;
+}
+
+.teaching-section_row {
+  justify-content: center;
+}
+
+.teaching-section_text {
+  padding: 2rem;
+  width: 100%;
+  margin: auto 0;
+  text-align: center;
+}
+
+.teaching-section_img-first {
+  min-height: 400px;
+  background: url("../img/42nd-street-1-min.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.teaching-section_img-second {
+  min-height: 400px;
+  background: url("../img/mamma-mia-1-min.JPG");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.teaching-section .teaching-section_row:last-of-type {
+  margin-top: 5rem;
+}
+
+.agent-logo {
+  text-align: center;
+}
+
+.agent-logo_img {
+  width: 60%;
+  padding: 0 6rem;
+}
+
+@media (min-width: 992px) {
+  .teaching-section_text {
+    padding: 3rem;
+    text-align: left;
+  }
+  .teaching-section_text hr {
+    border-color: #3a8bb9;
+    border-width: .25rem;
+    width: 30%;
+  }
+  .agent-logo_img {
+    width: 100%;
+  }
+}
+
+/* ------------------------------------------ */
+/* OPA */
+/* ------------------------------------------ */
+
+.testimonials-section h2,
+.onlineclasses-section h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px 0 0;
+}
+
+.testimonials-section h2 {
+	color: #fff;
+}
+
+.onlineclasses-section h2 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px auto;
+}
+
+.onlineclasses-section {
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, rgb(20, 20, 20) 0%, rgb(20, 20, 20) 50%, rgb(0, 0, 0) 100%);
+  color: #fff;
+}
+
+.onlineclasses-text  {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.onlineclasses-text p {
+  margin-bottom: 2rem;
+}
+
+.onlineclasses-btn {
+  text-align: center;
+}
+
+.testimonials-section {
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 75%, rgb(0, 0, 0) 100%), url("../img/42nd-street-3-min.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonial {
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+.carousel{
+  margin-top: 30px;
+  min-height: 250px;
+}
+.carousel-inner{
+  min-height: 250px;
+}
+.carousel-caption{
+  color: #fff;
+  top: 0;
+}
+
+.carousel-indicators {
+  margin: -1rem;
+}
+
+@media (min-width: 992px) {
+  .onlineclasses-text  {
+    border-right: 0.5rem solid #3a8bb9;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .onlineclasses-text p {
+    padding-right: 2rem;
+  }
+
+  .testimonial {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+
+  .carousel{
+    margin-top: 30px;
+    min-height: 200px;
+  }
+  .carousel-inner{
+    min-height: 200px;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .testimonials-section {
+    background-attachment: fixed;
+  }
+  .carousel-indicators {
+    margin: 0;
+  }
+}
+
+/* ------------------------------------------ */
+/* FORM */
+/* ------------------------------------------ */
+
+.contact-section .section-heading {
+  color: #444;
+}
+
+.contact-section .section-subheading {
+  color: #444;
+}
+
+.contact-section .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-section .form-group input,
+.contact-section .form-group textarea {
+  padding: 20px;
+}
+
+.contact-section .form-group input.form-control {
+  height: auto;
+}
+
+.contact-section .form-group textarea.form-control {
+  height: 248px;
+}
+
+.contact-section .form-control:focus {
+  border-color: #3a8bb9;
+  box-shadow: none;
+}
+
+.contact-section
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+}
+
+.contact-section {
+  padding: 5rem 0;
+  background-color: rgb(230, 230, 230);
+}
+
+.contact-section .form-inline input {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Nunito sans';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+@media (max-width: 992px) {
+  .contact-section button {
+    width: 100%;
+  } 
+}
+
+/* ------------------------------------------ */
+/* SOCIAL SECTION */
+/* ------------------------------------------ */
+
+.social-section {
+  padding: 3rem 0 0;
+}
+
+.social-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: #3a8bb9;
+  border-radius: 100%;
+  line-height: 3rem;
+  color: #ffffff;
+}
+
+.social-section .social a:hover {
+  background: #3a6eba;
+}
+
+.social-section .social a:active {
+  color: #fff;
+}
+
+/* ------------------------------------------ */
+/* FOOTER */
+/* ------------------------------------------ */
+
+footer {
+  padding: 3rem 0;
+}
+
+
+/* ------------------------------------------ */
+/* TO BE ORGANISED */
+/* ------------------------------------------ */
+
+.bg-black {
+  background-color: rgb(230, 230, 230) !important;
+}
+
+.bg-primary {
+  background-color: #3a8bb9 !important;
+}
+
+.text-primary {
+  color: #3a8bb9 !important;
+}
+
+
+
+.header-text-block {
+position: relative;
+top: 25%;
+}
+
+.header-btn {
+width: 350px;
+}
+
+h2,h3 {
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  position: absolute;
+  top: 0;
+}
