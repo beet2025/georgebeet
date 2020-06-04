@@ -269,6 +269,7 @@ a:hover {
 
 .teaching-section .teaching-section_row:last-of-type {
   margin-top: 5rem;
+  align-items: center;
 }
 
 .agent-logo {
@@ -277,12 +278,12 @@ a:hover {
 
 .agent-logo_img {
   width: 60%;
-  padding: 0 6rem;
+  padding: 0 0 1rem 0;
 }
 
 @media (min-width: 992px) {
   .teaching-section_text {
-    padding: 3rem;
+    padding: 0 3rem;
     text-align: left;
   }
   .teaching-section_text hr {
@@ -292,6 +293,7 @@ a:hover {
   }
   .agent-logo_img {
     width: 100%;
+    padding: 0 6rem;
   }
 }
 
